@@ -6,7 +6,7 @@ import Main from '@/view/Main.vue'
 import Mall from '@/view/Mall.vue'
 import PageOne from '@/view/PageOne.vue'
 import PageTwo from '@/view/PageTwo.vue'
-
+import Login from '@/view/Login.vue'
 Vue.use(VueRouter)
 //1.创建路由组件
 //2.将路由与组件进行映射
@@ -23,6 +23,9 @@ const routes = [
       { path: '/page1',name:'page1', component: PageOne },
       { path: '/page2',name:'page2', component: PageTwo }
     ]
+  },
+  {
+    path:'/login',name:'login',component:Login,
   }
 ]
 //解决路由重复跳转后报错
